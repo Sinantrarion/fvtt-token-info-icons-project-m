@@ -10,10 +10,12 @@ class TokenInfoIcons {
     let esp = 10;
     let od = 10;
     // cus_2 cus_4 cus_7
+    if(actor.system.skills.cus_2 != null){
     insight = actor.system.skills.cus_2.passive;
     perception = actor.system.skills.prc.passive;
     esp = actor.system.skills.cus_4.passive
     od = actor.system.skills.cus_7.passive
+    }
 
     //console.log("TokenInfoIcons", actor);
 
