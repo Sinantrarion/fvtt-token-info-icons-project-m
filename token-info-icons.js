@@ -171,6 +171,19 @@ class TokenInfoIcons {
         CONFIG.DND5E.creatureTypes['wronged'] = "Wronged";
 
         CONFIG.DND5E.damageTypes['pure'] = "Pure";
+
+        CONFIG.DND5E.characterFlags['mainWDD'] = {
+          name: "Main Weapon Damage Die", 
+          hint: "Put here the weapon damage die of your primary equipped weapon", 
+          section: "Damage Dies",
+          type: String,
+          placeholder: "1d6"}
+        CONFIG.DND5E.characterFlags['secondWDD'] = {
+          name: "Secondary Weapon Damage Die", 
+          hint: "Put here the weapon damage die of your secondary(offhand) equipped weapon, if any. This refers to Dual Wielding.", 
+          section: "Damage Dies",
+          type: String,
+          placeholder: "1d6"}
     }
 }
 
