@@ -51,15 +51,6 @@ class TokenInfoIcons {
         CONFIG.DND5E.weaponProperties['swift'] = 'Swift';
         CONFIG.DND5E.weaponProperties['trip'] = 'Trip';
 
-        CONFIG.DND5E.abilityActivationTypes['free'] = 'Free Action';
-        CONFIG.DND5E.abilityActivationTypes['attack'] = 'Attack';
-
-        CONFIG.DND5E.spellSchools['zerozeal'] = '0 Zeal';
-        CONFIG.DND5E.spellSchools['onezeal'] = '1 Zeal';
-        CONFIG.DND5E.spellSchools['twozeal'] = '2 Zeal';
-        CONFIG.DND5E.spellSchools['threezeal'] = '3 Zeal';
-        CONFIG.DND5E.spellSchools['fourzeal'] = '4 Zeal';
-
         CONFIG.DND5E.armorClasses.unarmoredBarb.formula = "10 + @abilities.str.mod + @abilities.con.mod";
 
         CONFIG.DND5E.armorClasses['unarmoredFighter'] = { label: 'Unarmored Defence(Prowess)', formula: "10 + @abilities.dex.mod + @abilities.con.mod"}
@@ -154,22 +145,6 @@ class TokenInfoIcons {
         CONFIG.DND5E.languages['ita'] = "Italian";
         CONFIG.DND5E.languages['por'] = "Portugese";
 
-        CONFIG.DND5E.creatureTypes = [];
-        CONFIG.DND5E.creatureTypes['arrogant'] = "Arrogant";
-        CONFIG.DND5E.creatureTypes['benevolent'] = "Benevolent";
-        CONFIG.DND5E.creatureTypes['bound'] = "Bound";
-        CONFIG.DND5E.creatureTypes['dead'] = "Dead";
-        CONFIG.DND5E.creatureTypes['erroneous'] = "Erroneous";
-        CONFIG.DND5E.creatureTypes['haunted'] = "Haunted";
-        CONFIG.DND5E.creatureTypes['idolatrous'] = "Idolatrous";
-        CONFIG.DND5E.creatureTypes['infirm'] = "Infirm";
-        CONFIG.DND5E.creatureTypes['jealous'] = "Jealous";
-        CONFIG.DND5E.creatureTypes['lying'] = "Lying";
-        CONFIG.DND5E.creatureTypes['neutral'] = "Neutral";
-        CONFIG.DND5E.creatureTypes['obsessed'] = "Obsessed";
-        CONFIG.DND5E.creatureTypes['perverse'] = "Perverse";
-        CONFIG.DND5E.creatureTypes['wronged'] = "Wronged";
-
         CONFIG.DND5E.damageTypes['pure'] = "Pure";
 
         CONFIG.DND5E.characterFlags['mainWDD'] = {
@@ -184,10 +159,42 @@ class TokenInfoIcons {
           section: "Damage Dies",
           type: String,
           placeholder: "1d6"}
+        CONFIG.DND5E.characterFlags['abilitymod'] = {
+          name: "Chosen Ability Mod", 
+          hint: "Here goes the ability mod link to your ability score that your Maneuver stuff will use. Write it as @abilities.str.mod", 
+          section: "Damage Dies",
+          type: String,
+          placeholder: "@abilities.str.mod"}
+  
     }
 }
 
+Hooks.once('setup', function () {
+  CONFIG.DND5E.creatureTypes = [];
+  CONFIG.DND5E.creatureTypes['arrogant'] = "Arrogant";
+  CONFIG.DND5E.creatureTypes['benevolent'] = "Benevolent";
+  CONFIG.DND5E.creatureTypes['bound'] = "Bound";
+  CONFIG.DND5E.creatureTypes['dead'] = "Dead";
+  CONFIG.DND5E.creatureTypes['erroneous'] = "Erroneous";
+  CONFIG.DND5E.creatureTypes['haunted'] = "Haunted";
+  CONFIG.DND5E.creatureTypes['idolatrous'] = "Idolatrous";
+  CONFIG.DND5E.creatureTypes['infirm'] = "Infirm";
+  CONFIG.DND5E.creatureTypes['jealous'] = "Jealous";
+  CONFIG.DND5E.creatureTypes['lying'] = "Lying";
+  CONFIG.DND5E.creatureTypes['neutral'] = "Neutral";
+  CONFIG.DND5E.creatureTypes['obsessed'] = "Obsessed";
+  CONFIG.DND5E.creatureTypes['perverse'] = "Perverse";
+  CONFIG.DND5E.creatureTypes['wronged'] = "Wronged";
 
+  CONFIG.DND5E.abilityActivationTypes['free'] = 'Free Action';
+  CONFIG.DND5E.abilityActivationTypes['attack'] = 'Attack';
+
+  CONFIG.DND5E.spellSchools['zerozeal'] = '0 Zeal';
+  CONFIG.DND5E.spellSchools['onezeal'] = '1 Zeal';
+  CONFIG.DND5E.spellSchools['twozeal'] = '2 Zeal';
+  CONFIG.DND5E.spellSchools['threezeal'] = '3 Zeal';
+  CONFIG.DND5E.spellSchools['fourzeal'] = '4 Zeal';
+});
 
 Hooks.on('ready', () => {
 
