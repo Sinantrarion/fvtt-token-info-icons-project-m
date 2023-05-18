@@ -51,6 +51,14 @@ class TokenInfoIcons {
         CONFIG.DND5E.weaponProperties['swift'] = 'Swift';
         CONFIG.DND5E.weaponProperties['trip'] = 'Trip';
 
+        CONFIG.DND5E.weaponProperties['crush'] = "Crush";
+        CONFIG.DND5E.weaponProperties['efficient'] = "Efficient",
+        CONFIG.DND5E.weaponProperties['exploit'] = "Exploit",
+        CONFIG.DND5E.weaponProperties['flex'] = "Flex",
+        CONFIG.DND5E.weaponProperties['flurry'] = "Flurry",
+        CONFIG.DND5E.weaponProperties['sever'] = "Sever",
+        CONFIG.DND5E.weaponProperties['penetrate'] = "Penetrate",
+
         CONFIG.DND5E.armorClasses.unarmoredBarb.formula = "10 + @abilities.str.mod + @abilities.con.mod";
 
         CONFIG.DND5E.armorClasses['unarmoredFighter'] = { label: 'Unarmored Defence(Prowess)', formula: "10 + @abilities.dex.mod + @abilities.con.mod"}
@@ -72,7 +80,6 @@ class TokenInfoIcons {
         CONFIG.DND5E.weaponIds['sickle'] = "token-info-icons-project-m.dndplus.pK24pDnl6j9NnnIc";
         CONFIG.DND5E.weaponIds['spear'] = "token-info-icons-project-m.dndplus.uxF19CgGoQmtyd0s";
         CONFIG.DND5E.weaponIds['lightcrossbow'] = "token-info-icons-project-m.dndplus.tNGVF31u9gkk943U";
-        CONFIG.DND5E.weaponIds['net'] = "token-info-icons-project-m.dndplus.t3GKRKLMMiM7XLAr";
         CONFIG.DND5E.weaponIds['shortbow'] = "token-info-icons-project-m.dndplus.78makCHJNmZwdPQe";
         CONFIG.DND5E.weaponIds['shuriken'] = "token-info-icons-project-m.dndplus.RLQtXuyVYHeGFnDM";
         CONFIG.DND5E.weaponIds['sling'] = "token-info-icons-project-m.dndplus.nS92E77UwSWtg6Q4";
@@ -109,28 +116,20 @@ class TokenInfoIcons {
         CONFIG.DND5E.weaponIds['repeatingcrossbow'] = "token-info-icons-project-m.dndplus.upJlvfjsF0soS4Yd";
 
         CONFIG.DND5E.armorIds = [];
-        CONFIG.DND5E.armorIds['fullplate'] = "token-info-icons-project-m.dndplus.v8GQvGwwzvoHsOPR";
-        CONFIG.DND5E.armorIds['lamellar'] = "token-info-icons-project-m.dndplus.mzBlFSwjSAeL0pzs";
-        CONFIG.DND5E.armorIds['splint'] = "token-info-icons-project-m.dndplus.9a5UmSNn1Bs57TPT";
-        CONFIG.DND5E.armorIds['brigandine'] = "token-info-icons-project-m.dndplus.XFYaCoJpPjTcwtKd";
         CONFIG.DND5E.armorIds['studdedleather'] = "token-info-icons-project-m.dndplus.b90zsDrcghVN3fNt";
-        CONFIG.DND5E.armorIds['banded'] = "token-info-icons-project-m.dndplus.69EcxRqpejDDuDi6";
-        CONFIG.DND5E.armorIds['halfplate'] = "token-info-icons-project-m.dndplus.unk29aZMF6theiGe";
-        CONFIG.DND5E.armorIds['scalemail'] = "token-info-icons-project-m.dndplus.aJOce6sLA346QANx";
-        CONFIG.DND5E.armorIds['woodenplate'] = "token-info-icons-project-m.dndplus.zMdjOt0ROaSkh64p";
-
-        CONFIG.DND5E.armorIds['breastplate'] = "token-info-icons-project-m.dndplus.rSw4KC5kv7OC1raE";
+        CONFIG.DND5E.armorIds['hidearmor'] = "token-info-icons-project-m.dndplus.4gZC1krxPjktEMsU";
         CONFIG.DND5E.armorIds['chainmail'] = "token-info-icons-project-m.dndplus.p0FLNjv7O8zWqrTv";
         CONFIG.DND5E.armorIds['ringmail'] = "token-info-icons-project-m.dndplus.OPiKXGWy0MZilHk2";
-        CONFIG.DND5E.armorIds['leather'] = "token-info-icons-project-m.dndplus.lACEDmxYzExKT4E1";
-        CONFIG.DND5E.armorIds['padded'] = "token-info-icons-project-m.dndplus.qRxf5XRvr598IhbA";
-        CONFIG.DND5E.armorIds['chainshirt'] = "token-info-icons-project-m.dndplus.A1gqMK6VU8rS2EjE";
-        CONFIG.DND5E.armorIds['hidearmor'] = "token-info-icons-project-m.dndplus.4gZC1krxPjktEMsU";
+        CONFIG.DND5E.armorIds['breastplate'] = "token-info-icons-project-m.dndplus.rSw4KC5kv7OC1raE";
+        CONFIG.DND5E.armorIds['brigandine'] = "token-info-icons-project-m.dndplus.XFYaCoJpPjTcwtKd";
+        CONFIG.DND5E.armorIds['scalemail'] = "token-info-icons-project-m.dndplus.aJOce6sLA346QANx";
+        CONFIG.DND5E.armorIds['halfplate'] = "token-info-icons-project-m.dndplus.unk29aZMF6theiGe";
+        CONFIG.DND5E.armorIds['splint'] = "token-info-icons-project-m.dndplus.9a5UmSNn1Bs57TPT";
+        CONFIG.DND5E.armorIds['fullplate'] = "token-info-icons-project-m.dndplus.v8GQvGwwzvoHsOPR";
 
         CONFIG.DND5E.shieldIds = [];
         CONFIG.DND5E.shieldIds['buckler'] = "token-info-icons-project-m.dndplus.fEUsUOoSebaEG8NV";
         CONFIG.DND5E.shieldIds['heater'] = "token-info-icons-project-m.dndplus.IEnW7C8Zvyf40k7O";
-        CONFIG.DND5E.shieldIds['kite'] = "token-info-icons-project-m.dndplus.OuKBqSgupvE5miXK";
         CONFIG.DND5E.shieldIds['tower'] = "token-info-icons-project-m.dndplus.XqZT5LCnxaIEJQTe";
 
         CONFIG.DND5E.languages = [];
