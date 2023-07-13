@@ -1,7 +1,7 @@
 {
   "title": "Token Info Icons Project M",
   "description": "Simple module that displays Project M stats.",
-  "version": "1.3",
+  "version": "1.4",
   "authors": [
     {
       "name": "Jan Ole Peek (ChalkOne), Sinantrarion",
@@ -30,16 +30,5 @@
         "compatibility": {}
       }
     ]
-  },
-  "packs": [
-    {
-      "name": "dndplus",
-      "label": "DnD+ Items",
-      "path": "./packs/dndplus.db",
-      "module": "world",
-      "type": "Item",
-      "system": "dnd5e",
-      "lang": []
-    }
-  ]
+  }
 }
